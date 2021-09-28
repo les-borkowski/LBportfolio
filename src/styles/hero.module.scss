@@ -79,4 +79,24 @@
     flex-direction: column;
   }
 
+  .heroTextMain {
+    font-size: 5rem;
+    line-height: 4rem;
+  }
+
+  .heroTextDesc {
+    @include typography.textParagraph;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    
+    
+  }
+  .xxlText {
+    padding-left: 3rem;
+    font-size: 7rem;
+    z-index: 1;
+    text-align: right;
+    text-shadow: 0.1em 0 3px #ff000055, -0.1em 0 3px #00ff0033, 0.1em -0.1em 5px #0000ff55;
+  }
+
 }
