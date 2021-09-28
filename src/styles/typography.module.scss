@@ -1,0 +1,52 @@
+@use 'colors.module.scss';
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;700&family=IBM+Plex+Serif:ital,wght@0,200;0,400;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+$font-primary: 'IBM Plex Sans';
+$font-secondary: 'IBM Plex Serif';
+
+
+@mixin navBtns {
+  font-family: $font-primary;
+  color: colors.$text-secondary;
+  font-weight: 300;
+  font-size: 1.5rem;
+  
+}
+
+@mixin textTitle {
+  font-family: $font-primary;
+  color: colors.$text-primary;
+  font-size: 4rem;
+  font-weight: 200;
+  line-height: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+@mixin textParagraph {
+  font-family: $font-secondary;
+  color: colors.$text-secondary;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+@mixin button {
+  font-family: $font-primary;
+  display: flex;
+  padding: 0.5rem;
+  margin: 0 3px;
+  color: colors.$text-secondary;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid colors.$text-secondary;
+}
+
+@mixin xxlText {
+  font-family: 'Permanent Marker';
+  color: colors.$text-secondary;
+  
+}
+
+
+

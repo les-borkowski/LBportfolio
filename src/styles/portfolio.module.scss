@@ -1,0 +1,17 @@
+@use 'layout.module.scss';
+
+
+.contentBox {
+  @include layout.contentBox;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;  
+}
+
+@media only screen and (max-width: 600px) {
+  .cardContainer {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+  }
+}

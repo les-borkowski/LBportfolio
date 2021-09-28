@@ -1,0 +1,70 @@
+@use 'colors.module.scss';
+@use 'typography.module.scss';
+
+
+.cardContainer {
+  width: 450px;
+  height: auto;
+  border: 1px solid colors.$text-secondary;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 1rem;
+  padding: 1rem;  
+}
+
+.cardMedia {
+  color: colors.$text-secondary;
+  font-size: 8rem;
+  padding: 0.5rem;
+  margin: 0;
+  
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cardDescription {
+  color: colors.$text-primary;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0.5rem;
+}
+
+.title {
+  @include typography.textTitle;
+  font-size: 2.5rem;
+  font-weight: 200;
+  line-height: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.shortDescr {
+  @include typography.textParagraph;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.cardLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.btn {
+  @include typography.button;
+}
+
+.btn:hover{
+  color: colors.$text-primary;
+  box-shadow: 0 0 1px 1px colors.$text-primary;
+}

@@ -1,0 +1,98 @@
+@use 'colors.module.scss';
+@use 'typography.module.scss';
+@use 'layout.module.scss';
+
+.contentBox {
+  @include layout.contentBox;
+  
+}
+
+.containerProject {
+  width: 100%;
+  border: 1px solid colors.$text-secondary;
+  padding: 7vh 2vh;
+  
+}
+
+.thumb {
+  float: right;
+  height: auto;
+  padding: 10px;
+  opacity: .75;
+  margin: 0.5rem;
+  margin-bottom: 5vh;
+  box-shadow: 3px 3px 10px 3px #000000aa;
+
+}
+
+.textTitle {
+  @include typography.textTitle;
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-bottom: 0.5rem;
+}
+.textStack {
+  @include typography.textTitle;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  color: colors.$text-secondary
+}
+
+.textParagraph {
+  @include typography.textParagraph;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.btn {
+  @include typography.button;
+}
+
+.btn:hover{
+  color: colors.$text-primary;
+  box-shadow: 0 0 1px 1px colors.$text-primary;
+}
+
+.mdxStyles {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  h1, h1, h3, h4, h5, h6 {
+    @include typography.textTitle;
+    color: colors.$text-secondary;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  p {
+    font-family: typography.$font-secondary;
+    color: colors.$text-secondary;
+    margin-bottom: 1rem;
+  }
+
+  ul, ol {
+    @extend p;
+    padding-left: 1rem;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  .photo {
+    width: 300px;
+    height: auto;
+    margin-top: 0;
+    margin-left: 0;
+    float: left;
+  }
+
+}

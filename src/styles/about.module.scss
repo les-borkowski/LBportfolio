@@ -1,0 +1,61 @@
+@use 'colors.module.scss';
+@use 'typography.module.scss';
+@use 'layout.module.scss';
+
+.contentBox {
+  @include layout.contentBox;
+  
+}
+
+.containerStory {
+  width: 100%;
+  border: 1px solid colors.$text-secondary;
+  padding: 7vh 2vh;
+}
+
+.photo {
+  float: left;
+  min-width: 200px;
+  max-width: 300px;
+  height: auto;
+  padding: 10px;
+  border: 1px solid colors.$text-secondary;
+  opacity: .75;
+  margin-right: 1.5rem;
+
+}
+
+.textTitle {
+  @include typography.textTitle;
+}
+.textParagraph {
+  @include typography.textParagraph;
+}
+
+
+.containerIcons {
+  @extend .containerStory;
+  margin-top: 5vh;
+  
+}
+
+.icons {
+  color: colors.$text-primary;
+  font-size: 4rem;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .photo {
+    width: 200px;
+    margin-top: 0;
+    float: left;
+  }
+
+}

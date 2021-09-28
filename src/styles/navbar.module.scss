@@ -1,0 +1,69 @@
+@use 'typography.module.scss';
+@use 'colors.module.scss';
+
+.navWrapper {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid colors.$text-secondary;
+}
+
+.navbarBtns {
+  @include typography.navBtns;
+  padding-left: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  
+    li {
+      display: block;
+      cursor: pointer;
+      padding-right: 15px;
+      border-bottom: 1 px solid #ffffff00;
+
+      a {
+        text-decoration: none;
+        // color override here bacause of gradient
+        color: #ffffff8f;
+      }
+      a:hover {
+        color: colors.$text-primary;
+        transition: color 0.125s ease-in;
+      }
+    }   
+  }
+}
+
+.navbarIcons {
+  display: flex;
+  padding-right: 5vw;
+  color: colors.$text-secondary;
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .icons {
+    cursor: pointer;
+    margin-right: 0.5rem;
+    font-size: 3rem;
+  }
+
+  .icons:hover {
+    color: colors.$text-primary;
+    transition: color 0.125s ease-in;
+  }
+  
+}
+
+

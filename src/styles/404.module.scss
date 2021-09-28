@@ -1,0 +1,30 @@
+@use 'colors.module.scss';
+@use 'typography.module.scss';
+@use 'layout.module.scss';
+
+.contentBox {
+  @include layout.contentBox;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.textMain {
+  @include typography.textTitle;
+  font-size: 6rem;
+  font-weight: 100;
+  line-height: 5rem;
+  padding-bottom: 1vh;
+  border-bottom: 1px solid colors.$text-primary;
+}
+
+.textDesc {
+  @include typography.textParagraph;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+  margin-top: 1vh;
+  max-width: 500px;
+}
