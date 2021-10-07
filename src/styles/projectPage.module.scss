@@ -43,6 +43,7 @@
 
 .textParagraph {
   @include typography.textParagraph;
+  text-decoration: none;
 }
 
 .links {
