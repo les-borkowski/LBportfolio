@@ -19,12 +19,12 @@ export default function ProjectPage({ data }) {
       
       <section>
 
-        <GatsbyImage
+        {/* <GatsbyImage
           className={thumb} 
           image={image}
           alt={data.mdx.frontmatter.thumb_alt}
           width={300}
-        />
+        /> */}
         
       <h2 className={textTitle}>{data.mdx.frontmatter.title}</h2>
       <h4 className={textStack}>{data.mdx.frontmatter.stack}</h4>
